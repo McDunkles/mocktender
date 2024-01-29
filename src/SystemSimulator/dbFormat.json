@@ -1,0 +1,32 @@
+{
+	"id": "cartilage",
+	"pins": [13, 16, 20],
+	"structure": {
+		"LiquidLevel1": {
+			"0000-00-00 00:00:00": -1
+		},
+		"LiquidLevel2": {
+			"0000-00-00 00:00:00": -1
+		},
+		"LiquidLevel3": {
+			"0000-00-00 00:00:00": -1
+		},
+		"dispensing": false,
+		"recipe": {
+			"ack": true,
+			"ready": true,
+			"drinkSize": -1,
+			"drinkPercentages": {
+				"l1": -1,
+				"l2": -1,
+				"l3": -1
+			}
+		},
+		"email": null,
+		"notified": {
+			"LiquidLevel1": false,
+			"LiquidLevel2": false,
+			"LiquidLevel3": false
+		}
+	}
+}

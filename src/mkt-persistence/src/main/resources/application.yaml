@@ -1,0 +1,31 @@
+server:
+  port: 8373
+  
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: "jdbc:postgresql://localhost:5632/mocktail_db"
+    username: postgres
+    password: postgres
+
+
+postgres:
+  database: ${POSTGRES_DATABASE:mocktail_db}
+  server: ${POSTGRES_SERVER:localhost}
+  port: ${POSTGRES_PORT:5632}
+
+
+spring.data.rest:
+  basePath: /api
+  default-media-type: application/hal+json
+
+firebase:
+  db_name: "MocktenderDb"
+  root_node: "IOController"
+  liquid_level1: "LiquidLevel1"
+  liquid_level2: "LiquidLevel2"
+  liquid_level3: "LiquidLevel3"
+  recipe: "recipe"

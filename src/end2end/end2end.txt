@@ -1,0 +1,8 @@
+rpi1 will send a message to the rpi2 and rpi3 mailboxes
+telling them to get into a ready state
+
+rpi2 and rpi3 will reply to the message from rpi1 by
+sending them to their respective rpi1 mailbox
+
+rpi1 will acknowledge the replies by setting its SenseHat
+LEDs to a colour representing each system.
